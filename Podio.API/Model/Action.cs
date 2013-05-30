@@ -27,6 +27,22 @@ namespace Podio.API.Model
 		public string Text { get; set; }
 
 
+		[DataMember(Name = "push", IsRequired=false)]
+		public Dictionary<string,object> Push { get; set; }
+
+
+		[DataMember(Name = "presence", IsRequired=false)]
+		public Dictionary<string,object> Presence { get; set; }
+
+
+		[DataMember(Name = "pinned", IsRequired=false)]
+		public bool? Pinned { get; set; }
+
+
+		[DataMember(Name = "comments", IsRequired=false)]
+		public List<Comment> Comments { get; set; }
+
+
 	}
 }
 

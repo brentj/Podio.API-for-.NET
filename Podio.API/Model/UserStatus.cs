@@ -35,6 +35,26 @@ namespace Podio.API.Model
 		public string Mailbox { get; set; }
 
 
+		[DataMember(Name = "message_unread_count", IsRequired=false)]
+		public int? MessageUnreadCount { get; set; }
+
+
+		[DataMember(Name = "flags", IsRequired=false)]
+		public string[] Flags { get; set; }
+
+
+		[DataMember(Name = "betas", IsRequired=false)]
+		public string[] Betas { get; set; }
+
+
+		[DataMember(Name = "push", IsRequired=false)]
+		public Dictionary<string,object> Push { get; set; }
+
+
+		[DataMember(Name = "presence", IsRequired=false)]
+		public Dictionary<string,object> Presence { get; set; }
+
+
 		[DataMember(Name = "user", IsRequired=false)]
 		public User User { get; set; }
 

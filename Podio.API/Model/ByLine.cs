@@ -43,6 +43,10 @@ namespace Podio.API.Model
 		public int? Avatar { get; set; }
 
 
+		[DataMember(Name = "last_seen_on", IsRequired=false)]
+		public DateTime? LastSeenOn { get; set; }
+
+
 	}
 }
 

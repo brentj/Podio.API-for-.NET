@@ -35,6 +35,10 @@ namespace Podio.API.Model
 		public Dictionary<string,object> Ref { get; set; }
 
 
+		[DataMember(Name = "created_on", IsRequired=false)]
+		public DateTime? CreatedOn { get; set; }
+
+
 		[DataMember(Name = "created_by", IsRequired=false)]
 		public ByLine CreatedBy { get; set; }
 

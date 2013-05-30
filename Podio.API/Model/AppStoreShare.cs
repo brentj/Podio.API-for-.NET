@@ -23,6 +23,10 @@ namespace Podio.API.Model
 		public string Status { get; set; }
 
 
+		[DataMember(Name = "link", IsRequired=false)]
+		public string Link { get; set; }
+
+
 		[DataMember(Name = "name", IsRequired=false)]
 		public string Name { get; set; }
 

@@ -19,14 +19,6 @@ namespace Podio.API.Model
 		public string Organization { get; set; }
 
 
-		[DataMember(Name = "role", IsRequired=false)]
-		public string Role { get; set; }
-
-
-		[DataMember(Name = "removable", IsRequired=false)]
-		public bool? Removable { get; set; }
-
-
 		[DataMember(Name = "type", IsRequired=false)]
 		public string Type { get; set; }
 

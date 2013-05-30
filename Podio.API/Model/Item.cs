@@ -35,6 +35,10 @@ namespace Podio.API.Model
 		public string[] Rights { get; set; }
 
 
+		[DataMember(Name = "created_on", IsRequired=false)]
+		public DateTime? CreatedOn { get; set; }
+
+
 		[DataMember(Name = "ratings", IsRequired=false)]
 		public Dictionary<string,object> Ratings { get; set; }
 
@@ -61,6 +65,10 @@ namespace Podio.API.Model
 
 		[DataMember(Name = "subscribed", IsRequired=false)]
 		public bool? Subscribed { get; set; }
+
+
+		[DataMember(Name = "pinned", IsRequired=false)]
+		public bool? Pinned { get; set; }
 
 
 		[DataMember(Name = "user_ratings", IsRequired=false)]
@@ -91,6 +99,26 @@ namespace Podio.API.Model
 		public float Priority { get; set; }
 
 
+		[DataMember(Name = "excerpt", IsRequired=false)]
+		public string Excerpt { get; set; }
+
+
+		[DataMember(Name = "is_liked", IsRequired=false)]
+		public bool? IsLiked { get; set; }
+
+
+		[DataMember(Name = "like_count", IsRequired=false)]
+		public int? LikeCount { get; set; }
+
+
+		[DataMember(Name = "push", IsRequired=false)]
+		public Dictionary<string,object> Push { get; set; }
+
+
+		[DataMember(Name = "presence", IsRequired=false)]
+		public Dictionary<string,object> Presence { get; set; }
+
+
 		[DataMember(Name = "comment_count", IsRequired=false)]
 		public int? CommentCount { get; set; }
 
@@ -99,16 +127,24 @@ namespace Podio.API.Model
 		public int? TaskCount { get; set; }
 
 
+		[DataMember(Name = "subscribed_count", IsRequired=false)]
+		public int? SubscribedCount { get; set; }
+
+
 		[DataMember(Name = "file_ids", IsRequired=false)]
 		public List<int> FileIds { get; set; }
 
 
-		[DataMember(Name = "initial_revision", IsRequired=false)]
-		public ItemRevision InitialRevision { get; set; }
+		[DataMember(Name = "created_by", IsRequired=false)]
+		public ByLine CreatedBy { get; set; }
 
 
-		[DataMember(Name = "current_revision", IsRequired=false)]
-		public ItemRevision CurrentRevision { get; set; }
+		[DataMember(Name = "created_via", IsRequired=false)]
+		public Via CreatedVia { get; set; }
+
+
+		[DataMember(Name = "date_election", IsRequired=false)]
+		public DateElection DateElection { get; set; }
 
 
 		[DataMember(Name = "reminder", IsRequired=false)]
@@ -121,6 +157,10 @@ namespace Podio.API.Model
 
 		[DataMember(Name = "linked_account_data", IsRequired=false)]
 		public LinkedAccountData LinkedAccountData { get; set; }
+
+
+		[DataMember(Name = "application", IsRequired=false)]
+		public Application Application { get; set; }
 
 
 		[DataMember(Name = "revisions", IsRequired=false)]

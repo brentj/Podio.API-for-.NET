@@ -71,10 +71,6 @@ namespace Podio.API.Model
 		public Via CreatedVia { get; set; }
 
 
-		[DataMember(Name = "user", IsRequired=false)]
-		public User User { get; set; }
-
-
 	}
 }
 

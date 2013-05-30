@@ -27,6 +27,10 @@ namespace Podio.API.Model
 		public string[] Capabilities { get; set; }
 
 
+		[DataMember(Name = "capability_names", IsRequired=false)]
+		public Dictionary<string,object> CapabilityNames { get; set; }
+
+
 	}
 }
 

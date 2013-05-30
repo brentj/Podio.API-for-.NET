@@ -107,6 +107,14 @@ namespace Podio.API.Model
 		public int? SegmentSize { get; set; }
 
 
+		[DataMember(Name = "grants_count", IsRequired=false)]
+		public int? GrantsCount { get; set; }
+
+
+		[DataMember(Name = "allow_add_space", IsRequired=false)]
+		public bool? AllowAddSpace { get; set; }
+
+
 		[DataMember(Name = "created_by", IsRequired=false)]
 		public ByLine CreatedBy { get; set; }
 

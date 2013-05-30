@@ -47,6 +47,10 @@ namespace Podio.API.Model
 		public Dictionary<string,object> Fields { get; set; }
 
 
+		[DataMember(Name = "type", IsRequired=false)]
+		public string Type { get; set; }
+
+
 		[DataMember(Name = "created_by", IsRequired=false)]
 		public User CreatedBy { get; set; }
 

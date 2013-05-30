@@ -47,6 +47,22 @@ namespace Podio.API.Model
 		public Dictionary<string,object> Data { get; set; }
 
 
+		[DataMember(Name = "x", IsRequired=false)]
+		public int? X { get; set; }
+
+
+		[DataMember(Name = "y", IsRequired=false)]
+		public int? Y { get; set; }
+
+
+		[DataMember(Name = "rows", IsRequired=false)]
+		public int? Rows { get; set; }
+
+
+		[DataMember(Name = "cols", IsRequired=false)]
+		public int? Cols { get; set; }
+
+
 	}
 }
 

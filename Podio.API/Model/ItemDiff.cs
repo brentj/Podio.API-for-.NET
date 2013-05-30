@@ -27,6 +27,10 @@ namespace Podio.API.Model
 		public string Label { get; set; }
 
 
+		[DataMember(Name = "config", IsRequired=false)]
+		public Dictionary<string,object> Config { get; set; }
+
+
 		[DataMember(Name = "from", IsRequired=false)]
 		public string[] From { get; set; }
 

@@ -191,5 +191,7 @@ namespace Podio.API
 
         public Services.TaskService TaskService { get { return new Services.TaskService(this); } }
 
+        public Services.UserService UserService { get { return new Services.UserService(this); } }
+
     }
 }

@@ -35,6 +35,14 @@ namespace Podio.API.Model
 		public DateTime? CreatedOn { get; set; }
 
 
+		[DataMember(Name = "like_count", IsRequired=false)]
+		public int? LikeCount { get; set; }
+
+
+		[DataMember(Name = "is_liked", IsRequired=false)]
+		public bool? IsLiked { get; set; }
+
+
 		[DataMember(Name = "file_ids", IsRequired=false)]
 		public List<int> FileIds { get; set; }
 
@@ -69,6 +77,10 @@ namespace Podio.API.Model
 
 		[DataMember(Name = "questions", IsRequired=false)]
 		public List<Question> Questions { get; set; }
+
+
+		[DataMember(Name = "granted_users", IsRequired=false)]
+		public List<Contact> GrantedUsers { get; set; }
 
 
 	}

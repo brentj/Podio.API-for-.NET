@@ -31,6 +31,10 @@ namespace Podio.API.Model
 		public string Description { get; set; }
 
 
+		[DataMember(Name = "rights", IsRequired=false)]
+		public string[] Rights { get; set; }
+
+
 		[DataMember(Name = "private", IsRequired=false)]
 		public bool? Private { get; set; }
 
@@ -81,6 +85,26 @@ namespace Podio.API.Model
 
 		[DataMember(Name = "external_id", IsRequired=false)]
 		public string ExternalId { get; set; }
+
+
+		[DataMember(Name = "subscribed", IsRequired=false)]
+		public bool? Subscribed { get; set; }
+
+
+		[DataMember(Name = "subscribed_count", IsRequired=false)]
+		public int? SubscribedCount { get; set; }
+
+
+		[DataMember(Name = "pinned", IsRequired=false)]
+		public bool? Pinned { get; set; }
+
+
+		[DataMember(Name = "push", IsRequired=false)]
+		public Dictionary<string,object> Push { get; set; }
+
+
+		[DataMember(Name = "presence", IsRequired=false)]
+		public Dictionary<string,object> Presence { get; set; }
 
 
 		[DataMember(Name = "ref_type", IsRequired=false)]

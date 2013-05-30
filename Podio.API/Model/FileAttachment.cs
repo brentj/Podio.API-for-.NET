@@ -59,6 +59,22 @@ namespace Podio.API.Model
 		public string[] Rights { get; set; }
 
 
+		[DataMember(Name = "subscribed", IsRequired=false)]
+		public bool? Subscribed { get; set; }
+
+
+		[DataMember(Name = "subscribed_count", IsRequired=false)]
+		public int? SubscribedCount { get; set; }
+
+
+		[DataMember(Name = "push", IsRequired=false)]
+		public Dictionary<string,object> Push { get; set; }
+
+
+		[DataMember(Name = "presence", IsRequired=false)]
+		public Dictionary<string,object> Presence { get; set; }
+
+
 		[DataMember(Name = "created_by", IsRequired=false)]
 		public ByLine CreatedBy { get; set; }
 
@@ -69,6 +85,10 @@ namespace Podio.API.Model
 
 		[DataMember(Name = "replaces", IsRequired=false)]
 		public List<FileAttachment> Replaces { get; set; }
+
+
+		[DataMember(Name = "comments", IsRequired=false)]
+		public List<Comment> Comments { get; set; }
 
 
 	}

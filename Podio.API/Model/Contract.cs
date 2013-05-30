@@ -31,6 +31,10 @@ namespace Podio.API.Model
 		public DateTime? StartedOn { get; set; }
 
 
+		[DataMember(Name = "created_via", IsRequired=false)]
+		public string CreatedVia { get; set; }
+
+
 		[DataMember(Name = "ended_on", IsRequired=false)]
 		public DateTime? EndedOn { get; set; }
 
@@ -51,8 +55,16 @@ namespace Podio.API.Model
 		public string PaymentStatus { get; set; }
 
 
+		[DataMember(Name = "payment_provider", IsRequired=false)]
+		public string PaymentProvider { get; set; }
+
+
 		[DataMember(Name = "accounting_id", IsRequired=false)]
 		public string AccountingId { get; set; }
+
+
+		[DataMember(Name = "accounting_provider", IsRequired=false)]
+		public string AccountingProvider { get; set; }
 
 
 		[DataMember(Name = "full", IsRequired=false)]
@@ -97,6 +109,34 @@ namespace Podio.API.Model
 
 		[DataMember(Name = "model", IsRequired=false)]
 		public string Model { get; set; }
+
+
+		[DataMember(Name = "unpaid_due_date", IsRequired=false)]
+		public DateTime? UnpaidDueDate { get; set; }
+
+
+		[DataMember(Name = "count_employee", IsRequired=false)]
+		public int? CountEmployee { get; set; }
+
+
+		[DataMember(Name = "count_external", IsRequired=false)]
+		public int? CountExternal { get; set; }
+
+
+		[DataMember(Name = "yearly_rebate_factor", IsRequired=false)]
+		public decimal YearlyRebateFactor { get; set; }
+
+
+		[DataMember(Name = "mrr", IsRequired=false)]
+		public decimal Mrr { get; set; }
+
+
+		[DataMember(Name = "days_overdue", IsRequired=false)]
+		public int? DaysOverdue { get; set; }
+
+
+		[DataMember(Name = "overdue_status", IsRequired=false)]
+		public string OverdueStatus { get; set; }
 
 
 		[DataMember(Name = "org", IsRequired=false)]

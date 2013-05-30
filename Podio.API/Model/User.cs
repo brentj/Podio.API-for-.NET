@@ -43,16 +43,12 @@ namespace Podio.API.Model
 		public string NewPassword { get; set; }
 
 
-		[DataMember(Name = "flags", IsRequired=false)]
-		public string[] Flags { get; set; }
-
-
-		[DataMember(Name = "betas", IsRequired=false)]
-		public string[] Betas { get; set; }
-
-
 		[DataMember(Name = "created_on", IsRequired=false)]
 		public DateTime? CreatedOn { get; set; }
+
+
+		[DataMember(Name = "activated_on", IsRequired=false)]
+		public DateTime? ActivatedOn { get; set; }
 
 
 		[DataMember(Name = "name", IsRequired=false)]

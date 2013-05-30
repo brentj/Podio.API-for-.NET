@@ -19,6 +19,10 @@ namespace Podio.API.Model
 		public string Subject { get; set; }
 
 
+		[DataMember(Name = "pinned", IsRequired=false)]
+		public bool? Pinned { get; set; }
+
+
 		[DataMember(Name = "text", IsRequired=false)]
 		public string Text { get; set; }
 
@@ -39,8 +43,40 @@ namespace Podio.API.Model
 		public int? EmbedFileId { get; set; }
 
 
+		[DataMember(Name = "link", IsRequired=false)]
+		public string Link { get; set; }
+
+
 		[DataMember(Name = "created_on", IsRequired=false)]
 		public DateTime? CreatedOn { get; set; }
+
+
+		[DataMember(Name = "excerpt", IsRequired=false)]
+		public string Excerpt { get; set; }
+
+
+		[DataMember(Name = "last_event_on", IsRequired=false)]
+		public DateTime? LastEventOn { get; set; }
+
+
+		[DataMember(Name = "starred", IsRequired=false)]
+		public bool? Starred { get; set; }
+
+
+		[DataMember(Name = "unread", IsRequired=false)]
+		public bool? Unread { get; set; }
+
+
+		[DataMember(Name = "type", IsRequired=false)]
+		public string Type { get; set; }
+
+
+		[DataMember(Name = "push", IsRequired=false)]
+		public Dictionary<string,object> Push { get; set; }
+
+
+		[DataMember(Name = "presence", IsRequired=false)]
+		public Dictionary<string,object> Presence { get; set; }
 
 
 		[DataMember(Name = "embed", IsRequired=false)]
@@ -53,6 +89,10 @@ namespace Podio.API.Model
 
 		[DataMember(Name = "created_by", IsRequired=false)]
 		public ByLine CreatedBy { get; set; }
+
+
+		[DataMember(Name = "live", IsRequired=false)]
+		public Live Live { get; set; }
 
 
 		[DataMember(Name = "files", IsRequired=false)]

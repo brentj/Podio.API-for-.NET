@@ -43,8 +43,36 @@ namespace Podio.API.Model
 		public bool? Subscribed { get; set; }
 
 
+		[DataMember(Name = "pinned", IsRequired=false)]
+		public bool? Pinned { get; set; }
+
+
 		[DataMember(Name = "user_ratings", IsRequired=false)]
 		public Dictionary<string,object> UserRatings { get; set; }
+
+
+		[DataMember(Name = "rights", IsRequired=false)]
+		public string[] Rights { get; set; }
+
+
+		[DataMember(Name = "is_liked", IsRequired=false)]
+		public bool? IsLiked { get; set; }
+
+
+		[DataMember(Name = "like_count", IsRequired=false)]
+		public int? LikeCount { get; set; }
+
+
+		[DataMember(Name = "subscribed_count", IsRequired=false)]
+		public int? SubscribedCount { get; set; }
+
+
+		[DataMember(Name = "push", IsRequired=false)]
+		public Dictionary<string,object> Push { get; set; }
+
+
+		[DataMember(Name = "presence", IsRequired=false)]
+		public Dictionary<string,object> Presence { get; set; }
 
 
 		[DataMember(Name = "file_ids", IsRequired=false)]
@@ -60,7 +88,7 @@ namespace Podio.API.Model
 
 
 		[DataMember(Name = "created_by", IsRequired=false)]
-		public Contact CreatedBy { get; set; }
+		public ByLine CreatedBy { get; set; }
 
 
 		[DataMember(Name = "created_via", IsRequired=false)]

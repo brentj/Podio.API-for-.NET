@@ -87,6 +87,14 @@ namespace Podio.API.Model
 		public DateTime? CreatedOn { get; set; }
 
 
+		[DataMember(Name = "is_overdue", IsRequired=false)]
+		public bool? IsOverdue { get; set; }
+
+
+		[DataMember(Name = "push", IsRequired=false)]
+		public Dictionary<string,object> Push { get; set; }
+
+
 		[DataMember(Name = "created_by", IsRequired=false)]
 		public ByLine CreatedBy { get; set; }
 
