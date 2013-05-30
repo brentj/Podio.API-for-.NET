@@ -7,17 +7,13 @@ namespace Podio.API.Model
     [DataContract]
     public partial class DateElectionVote
     {
+        [DataMember(Name = "date_option_id", IsRequired = false)]
+        public int? DateOptionId { get; set; }
 
+        [DataMember(Name = "value", IsRequired = false)]
+        public bool? Value { get; set; }
 
-        [DataMember(Name = "date_election_id", IsRequired = false)]
-        public int? DateElectionId { get; set; }
-
-
-        [DataMember(Name = "votes", IsRequired = false)]
-        public List<DateElectionVote> Votes { get; set; }
-
-
-        [DataMember(Name = "options", IsRequired = false)]
-        public List<DateElectionOption> Options { get; set; }
+        [DataMember(Name = "user", IsRequired = false)]
+        public Contact User { get; set; }
     }
 }

@@ -7,8 +7,6 @@ namespace Podio.API.Model
     [DataContract]
     public partial class DateElectionOption
     {
-
-
         [DataMember(Name = "date_option_id", IsRequired = false)]
         public int? DateOptionId { get; set; }
 

@@ -111,7 +111,9 @@
     <Compile Include="Model\OrganizationMember.cs" />
     <Compile Include="Model\OrganizationProfile.cs" />
     <Compile Include="Model\Pin.cs" />
+    <Compile Include="Model\Presence.cs" />
     <Compile Include="Model\Profile.cs" />
+    <Compile Include="Model\Push.cs" />
     <Compile Include="Model\Question.cs" />
     <Compile Include="Model\QuestionAnswer.cs" />
     <Compile Include="Model\QuestionOption.cs" />
@@ -153,11 +155,11 @@
     <Compile Include="Services\UserService.cs" />
     <Compile Include="Services\SpaceService.cs" />
     <Compile Include="Model\Ext\Application.cs" />
-    <Compile Include="Utils\ApplicationFields\ApplicationField.cs" />
-    <Compile Include="Utils\ApplicationFields\ApplicationFieldConfig.cs" />
-    <Compile Include="Utils\ApplicationFields\CategoryApplicationField.cs" />
-    <Compile Include="Utils\ApplicationFields\StateApplicationField.cs" />
-    <Compile Include="Utils\ApplicationFields\TextApplicationField.cs" />
+    <Compile Include="Model\ApplicationFields\ApplicationField.cs" />
+    <Compile Include="Model\ApplicationFields\ApplicationFieldConfig.cs" />
+    <Compile Include="Model\ApplicationFields\CategoryApplicationField.cs" />
+    <Compile Include="Model\ApplicationFields\StateApplicationField.cs" />
+    <Compile Include="Model\ApplicationFields\TextApplicationField.cs" />
     <Compile Include="Model\AppValues.cs" />
     <Compile Include="Model\ItemFieldRange.cs" />
     <Compile Include="Model\Ext\Item.cs" />
