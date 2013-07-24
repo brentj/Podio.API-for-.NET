@@ -40,6 +40,11 @@ namespace Podio.API.Utils.ItemFilters
             return new KeyValuePair<string, IPodioFilter>("created_on", filter);
         }
 
+        public static KeyValuePair<string, IPodioFilter> LastEditOnFilter(DateFilter filter)
+        {
+            return new KeyValuePair<string, IPodioFilter>("last_edit_on", filter);
+        }
+
         public static KeyValuePair<string, IPodioFilter> ExternalIdFilter(string exernalId)
         {
             ValueFilter<string> filter = new ValueFilter<string>(exernalId);
