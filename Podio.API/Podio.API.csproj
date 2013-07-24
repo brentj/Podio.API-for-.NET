@@ -72,6 +72,11 @@
     <Compile Include="Model\DateElection.cs" />
     <Compile Include="Model\DateElectionOption.cs" />
     <Compile Include="Model\DateElectionVote.cs" />
+    <Compile Include="Model\Enums\ApprovedRating.cs" />
+    <Compile Include="Model\Enums\RsvpRating.cs" />
+    <Compile Include="Model\Enums\StarRating.cs" />
+    <Compile Include="Model\Enums\ThumbsRating.cs" />
+    <Compile Include="Model\Enums\YesNoRating.cs" />
     <Compile Include="Model\ItemExpanded.cs" />
     <Compile Include="Model\Comment.cs" />
     <Compile Include="Model\Connection.cs" />
@@ -179,8 +184,27 @@
     <Compile Include="Utils\ItemFields\StateItemField.cs" />
     <Compile Include="Utils\ItemFields\TextItemField.cs" />
     <Compile Include="Model\ItemReference.cs" />
+    <Compile Include="Utils\ItemFilters\AppFilter.cs" />
+    <Compile Include="Utils\ItemFilters\AuthObjectFilter.cs" />
+    <Compile Include="Utils\ItemFilters\AuthObjectType.cs" />
+    <Compile Include="Utils\ItemFilters\CalculationFilter.cs" />
+    <Compile Include="Utils\ItemFilters\CategoryFilter.cs" />
+    <Compile Include="Utils\ItemFilters\CollectionFilter.cs" />
+    <Compile Include="Utils\ItemFilters\ContactFilter.cs" />
+    <Compile Include="Utils\ItemFilters\DateFilter.cs" />
+    <Compile Include="Utils\ItemFilters\DurationFilter.cs" />
+    <Compile Include="Utils\ItemFilters\IPodioFilter.cs" />
+    <Compile Include="Utils\ItemFilters\ISimpleValue.cs" />
+    <Compile Include="Utils\ItemFilters\MoneyFilter.cs" />
+    <Compile Include="Utils\ItemFilters\NumberFilter.cs" />
+    <Compile Include="Utils\ItemFilters\ProgressFilter.cs" />
+    <Compile Include="Utils\ItemFilters\QuestionFilter.cs" />
+    <Compile Include="Utils\ItemFilters\StandardFilters.cs" />
+    <Compile Include="Utils\ItemFilters\StateFilter.cs" />
+    <Compile Include="Utils\ItemFilters\ValueFilter.cs" />
     <Compile Include="Utils\PodioCollection.cs" />
     <Compile Include="Utils\RestHelper.cs" />
+    <Compile Include="Utils\SimpleValueConverter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="LICENSE.txt" />

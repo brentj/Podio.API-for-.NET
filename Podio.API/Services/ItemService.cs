@@ -396,7 +396,7 @@ namespace Podio.API.Services
             public bool? Remember { get; set; }
 
             [DataMember(IsRequired = false, Name = "filters")]
-            public List<Dictionary<string, object>> Filters { get; set; }
+            public Dictionary<string,Podio.API.Utils.ItemFilters.IPodioFilter> Filters { get; set; }
         }
 
     }

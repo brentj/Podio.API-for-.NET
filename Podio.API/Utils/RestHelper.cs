@@ -63,7 +63,7 @@ namespace Podio.API.Utils
                 return serializer.Deserialize(reader);
             }
         }
-        #endregion
+#endregion
 
         public class PodioResponse<T>
         {
