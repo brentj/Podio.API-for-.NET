@@ -16,7 +16,7 @@ namespace Podio.API.Model
 
 
 		[DataMember(Name = "mail", IsRequired=false)]
-		public string Mail { get; set; }
+		public List<string> Mail { get; set; }
 
 
 		[DataMember(Name = "status", IsRequired=false)]

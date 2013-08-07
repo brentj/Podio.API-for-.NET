@@ -193,5 +193,7 @@ namespace Podio.API
 
         public Services.UserService UserService { get { return new Services.UserService(this); } }
 
+        public Services.ContactService ContactService { get { return new Services.ContactService(this); } }
+
     }
 }
