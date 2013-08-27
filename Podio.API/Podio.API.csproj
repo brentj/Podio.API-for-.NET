@@ -73,6 +73,8 @@
     <Compile Include="Model\DateElectionOption.cs" />
     <Compile Include="Model\DateElectionVote.cs" />
     <Compile Include="Model\Enums\ApprovedRating.cs" />
+    <Compile Include="Model\Enums\ContactResultType.cs" />
+    <Compile Include="Model\Enums\ContactType.cs" />
     <Compile Include="Model\Enums\RsvpRating.cs" />
     <Compile Include="Model\Enums\StarRating.cs" />
     <Compile Include="Model\Enums\ThumbsRating.cs" />
