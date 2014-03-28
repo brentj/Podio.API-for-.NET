@@ -436,6 +436,12 @@ public static class ObjectExtensions
                         case "String[]":
                             value = castedValue.Select(s => s.ToString()).ToArray();
                             break;
+                        default:
+                            if (castedValue.Count == 0)
+                            {
+                                value = null;
+                            }
+                            break;
                     }
                 }
                 propertyMap[item.Key].SetValue(someObject, value, null);
